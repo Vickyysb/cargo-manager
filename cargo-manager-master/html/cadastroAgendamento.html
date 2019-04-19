@@ -1,0 +1,78 @@
+
+ <!DOCTYPE html>
+ <head>
+     <meta charset="UTF-8">
+     <title> Cadastrar Agendamento</title>
+     
+ </head>
+ 
+ <body>
+            
+ <div>
+     <form  action="#" >
+         
+         <fieldset >
+                 <h2> Cadastrar agendamento </h2>
+                 <div class="form-group">
+                         <label>Motorista:</label> 
+                         <select id="motorista">
+                                 <option value="motorista1" class="form-control form-control-sm" >Motorista 1</option>
+                                 <option value="motorista2" class="form-control form-control-sm" >Motorista 2</option>
+                         </select>
+                 </div>
+                 <div class="form-group">
+                         <label>Veículo:</label>
+                         <select id="veiculo">
+                                 <option value="veiculo1" class="form-control form-control-sm">Veículo 1</option>
+                                 <option value="veiculo2" class="form-control form-control-sm">Veículo 2</option>
+                         </select>
+                  </div>
+                  <div class="form-group">
+                         <label>Data de entrada: <input type="date" class="form-control form-control-sm" id="dateIn" required></label>  
+                  </div>
+                  <div class="form-group">
+                         <label> Data de Saída: <input type="date" class="form-control form-control-sm" id="dateOut" required></label>
+                
+                        </div>
+                 <div class="form-group">
+                         <label>Tipo de operação: </label>
+                    <br>
+                         
+                         <input type="radio" name="op" value="carga" id="op" checked> Carga
+                         <input type="radio" name="op" value="descarga" id="op"> Descarga
+                 </div>
+         
+                 <button type="button" id="btnCad" > Cadastrar</button>
+         
+             </form>
+ 
+ 
+         </fieldset>
+           
+ </div>
+
+ <div class="container">
+         <h2>Cadastros agendados</h2>
+        <table id="tabela" class="table">
+                <tbody>
+                        
+            <tr>
+             <th>Motorista</th> 
+              <th>Veículo</th>
+              <th>Entrada</th>
+              <th>Saída</th>
+             <!--<th>Tipo</th>--> 
+            </tr> 
+            
+        
+        </tbody>
+        </table>
+        
+        
+        </div>
+     
+ 
+ <script type="text/javascript" src="../javascript/controlaTabela.js"></script>
+ 
+ </body>
+ </html>
